@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './main.css';
 import App from './App.jsx';
-import ChatbotIcon from './components/ChatbotIcon.jsx';
 import Navbar from './components/Navbar.jsx';
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
@@ -12,6 +11,7 @@ import Contact from './components/Contact.jsx';
 import PrescriptionHandling from './components/PrescriptionHandling.jsx';
 import Dashboard from './components/Dashboard.jsx';
 import Tutorial from './components/Tutorial.jsx';
+import ChatWidget from './components/Chatwidget.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
@@ -25,7 +25,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/tutorial" element={<Tutorial />} />
       </Routes>
-      <ChatbotIcon />
+      <ChatWidget />
     </Router>
   </StrictMode>
 );
