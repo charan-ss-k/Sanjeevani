@@ -8,7 +8,7 @@ import Home from './components/Home.jsx';
 import About from './components/About.jsx';
 import Services from './components/Services.jsx';
 import Contact from './components/Contact.jsx';
-import ChatbotIcon from './components/ChatbotIcon.jsx';
+import ChatWidget from './components/ChatWidget.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,7 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <ChatbotIcon />
+      <ChatWidget />
     </Router>
   </StrictMode>
 );
